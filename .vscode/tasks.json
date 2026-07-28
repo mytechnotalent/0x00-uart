@@ -1,0 +1,27 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Start OpenOCD",
+            "type": "shell",
+            "command": "make && pkill -f openocd 2>/dev/null; wch-openocd -f openocd.cfg",
+            "isBackground": true,
+            "problemMatcher": [
+                {
+                    "pattern": { "regexp": "^$", "file": 0 },
+                    "background": {
+                        "activeOnStart": true,
+                        "beginsPattern": "Info :",
+                        "endsPattern": "Ready for Remote Connections"
+                    }
+                }
+            ]
+        },
+        {
+            "label": "Stop OpenOCD",
+            "type": "shell",
+            "command": "pkill -f openocd 2>/dev/null || true",
+            "problemMatcher": []
+        }
+    ]
+}

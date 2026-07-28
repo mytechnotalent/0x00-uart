@@ -1,0 +1,45 @@
+[*]
+[*] GTKWave Analyzer
+[*]
+[dumpfile] "build/trace.vcd"
+[savefile] "sim/gtkwave_setup.gtkw"
+[timestart] 0
+[size] 1200 600
+[pos] -1 -1
+*-2.000000 0 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1 -1
+[treeopen] TOP.
+[treeopen] TOP.tb.
+[sst_width] 200
+[signals_width] 300
+[sst_expanded] 1
+[sst_vpaned_height] 150
+@28
+TOP.tb.clk
+TOP.tb.mem_valid
+TOP.tb.mem_ready
+@22
+TOP.tb.cpu.dbg_insn_addr[31:0]
+TOP.tb.cpu.dbg_insn_opcode[31:0]
+@820
+TOP.tb.cpu.dbg_ascii_instr[63:0]
+TOP.tb.cpu.dbg_ascii_state[127:0]
+@22
+TOP.tb.mem_addr[31:0]
+TOP.tb.mem_rdata[31:0]
+TOP.tb.mem_wdata[31:0]
+TOP.tb.cpu.cpuregs[0][31:0]
+TOP.tb.cpu.cpuregs[1][31:0]
+TOP.tb.cpu.cpuregs[2][31:0]
+TOP.tb.cpu.cpuregs[3][31:0]
+TOP.tb.cpu.cpuregs[4][31:0]
+TOP.tb.cpu.cpuregs[5][31:0]
+TOP.tb.cpu.cpuregs[6][31:0]
+TOP.tb.cpu.cpuregs[7][31:0]
+TOP.tb.cpu.cpuregs[8][31:0]
+TOP.tb.cpu.cpuregs[9][31:0]
+TOP.tb.cpu.cpuregs[10][31:0]
+TOP.tb.cpu.cpuregs[11][31:0]
+TOP.tb.cpu.cpuregs[12][31:0]
+TOP.tb.cpu.cpuregs[13][31:0]
+TOP.tb.cpu.cpuregs[14][31:0]
+TOP.tb.cpu.cpuregs[15][31:0]

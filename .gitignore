@@ -1,0 +1,4 @@
+build/
+gdb_script.txt
+.ruff_cache/
+sim/__pycache__/

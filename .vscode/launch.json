@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Debug CH32V003",
+            "type": "cortex-debug",
+            "request": "attach",
+            "servertype": "openocd",
+            "serverpath": "wch-openocd",
+            "executable": "${workspaceFolder}/build/0x00-uart.elf",
+            "configFiles": [
+                "openocd.cfg"
+            ],
+            "svdFile": "${workspaceFolder}/CH32V003xx.svd",
+            "gdbPath": "riscv64-elf-gdb",
+            "toolchainPrefix": "riscv64-unknown-elf-",
+            "cwd": "${workspaceFolder}",
+            "preLaunchTask": "Start OpenOCD",
+            "preAttachCommands": [
+                "monitor reset halt",
+                "load",
+                "set output-radix 16"
+            ]
+        }
+    ]
+}

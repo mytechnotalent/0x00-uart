@@ -1,0 +1,10 @@
+# Force LF for build scripts so make on Linux/macOS doesn't choke on CRLF.
+Makefile text eol=lf
+*.mk text eol=lf
+link.ld text eol=lf
+*.s text eol=lf
+*.cfg text eol=lf
+
+# Exclude the vendored picorv32 core + testbench from language statistics so
+# GitHub shows Assembly (the actual firmware) instead of Verilog.
+*.v linguist-vendored
